@@ -1,0 +1,124 @@
+---
+title: Changelog
+description: Stay updated with the latest releases, new features, and improvements in Pakusaru.
+---
+
+## Stay Up to Date
+
+Pakusaru releases updates regularly to introduce new features, enhance performance, and fix issues. You receive notifications in your dashboard when a new version is available. Review the highlights below to understand changes and plan your updates.
+
+<Callout kind="info">
+  Check your dashboard at `https://dashboard.example.com` for update status and automated migration tools.
+</Callout>
+
+## Recent Releases
+
+<Update label="2024-10-20" description="v1.3.0" tags={["feature", "bugfix"]}>
+## New Features
+
+- Added real-time collaboration for teams, allowing multiple users to edit docs simultaneously.
+- Introduced version history with diff viewer to compare changes easily.
+
+## Improvements
+
+- Enhanced search with fuzzy matching and full-text indexing for faster results.
+- Optimized page load times by `>30%` through lazy loading components.
+
+## Bug Fixes
+
+- Fixed markdown rendering issues with nested lists and tables.
+- Resolved authentication errors during long sessions.
+
+</Update>
+
+<Update label="2024-09-25" description="v1.2.0" tags={["feature", "improvement"]}>
+## New Features
+
+- Integrated GitHub sync for automatic doc updates from repositories.
+- Added custom themes with your brand color `#3B82F6`.
+
+## Improvements
+
+- Upgraded editor with AI-powered suggestions for content completion.
+- Better mobile responsiveness for documentation previews.
+
+## Bug Fixes
+
+- Corrected export failures for large documents.
+- Patched security vulnerability in webhook handling.
+
+<CodeGroup tabs="JavaScript,Python">
+````javascript
+// Update your config for new GitHub sync
+const pakusaruConfig = {
+  github: {
+    repo: 'your-org/your-repo',
+    token: 'YOUR_GITHUB_TOKEN'
+  }
+};
+````
+````python
+# Update your config for new GitHub sync
+pakusaru_config = {
+    'github': {
+        'repo': 'your-org/your-repo',
+        'token': 'YOUR_GITHUB_TOKEN'
+    }
+}
+````
+</CodeGroup>
+
+</Update>
+
+<Update label="2024-08-15" description="v1.1.0" tags={["breaking", "feature"]}>
+## Breaking Changes
+
+- Removed legacy YAML frontmatter parser; migrate to new MDX format.
+
+## New Features
+
+- Launched API for programmatic doc management at `https://api.example.com/v1`.
+- Embedded analytics dashboard for page views and engagement.
+
+## Improvements
+
+- Streamlined onboarding with interactive quickstart wizard.
+
+</Update>
+
+## Migration Guide
+
+Upgrading Pakusaru keeps your documentation secure and feature-rich. Follow these steps for smooth transitions.
+
+<Steps>
+<Step title="Backup Your Docs" icon="database">
+Export all pages via the dashboard to avoid data loss.
+</Step>
+<Step title="Review Changes" icon="book-open">
+Read release notes above and test in staging.
+</Step>
+<Step title="Update Config" icon="settings">
+Apply new settings, like the GitHub token example.
+</Step>
+<Step title="Deploy Update" icon="rocket">
+Run the update command and verify functionality.
+</Step>
+</Steps>
+
+<Callout kind="tip">
+For breaking changes in v1.1.0, use the migration tool at `https://dashboard.example.com/migrate`.
+</Callout>
+
+## Next Steps
+
+<Columns cols={3}>
+<Card title="Quickstart" icon="zap" href="/quickstart">
+Get started with the latest version in minutes.
+</Card>
+<Card title="API Reference" icon="code" href="/authentication">
+Explore new endpoints and authentication.
+</Card>
+<Card title="Customization" icon="settings" href="/configuration">
+Tailor Pakusaru with advanced options.
+</Card>
+</Columns>
